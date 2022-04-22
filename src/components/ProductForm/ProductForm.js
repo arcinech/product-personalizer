@@ -3,7 +3,7 @@ import styles from './ProductForm.module.scss';
 import OptionColor from '../OptionColor/OptionColor';
 import OptionSize from '../OptionSize/OptionSize';
 const ProductForm = props => {
-  console.log(props);
+  
   const addToCart = (e) => {
     e.preventDefault();
     console.log('Summary');
