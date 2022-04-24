@@ -6,12 +6,12 @@ const OptionColor = props => {
     <div className={styles.colors}>
     <h3 className={styles.optionLabel}>Colors</h3>
     <ul className={styles.choices}>
-      {props.colors.map((color, i) => {
+      {props.colors.map((color) => {
         const capitalize = string => {
           return 'color' + string[0].toUpperCase() + string.substr(1).toLowerCase();
         }
         return (
-          <li key={i}>
+          <li key={color}>
             <button 
               type="button" 
               className={clsx(styles[capitalize(color)], (color===props.currentColor) && styles.active)} 
